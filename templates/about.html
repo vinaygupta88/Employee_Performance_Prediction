@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta name="author" content="Vinay">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  {% include 'navbar.html' %}
+  <div class="container text-center mt-5">
+  <h2 class="text-warning">About This Project</h2>
+  <p class="lead">
+    Productivity is essential at all levels of a company. Our system analyzes various workplace factors to predict employee productivity, helping organizations improve efficiency and performance.
+  </p>
+
+  <hr style="border-top: 2px solid #fff; width: 60%; margin: 30px auto;">
+
+  <div class="row text-left" style="color: #f1f1f1;">
+    <div class="col-md-6">
+      <h3 class="text-info">🎯 Project Objective</h3>
+      <p>
+        The main goal of this project is to help businesses understand employee performance trends using machine learning. By assessing multiple factors like working hours, incentives, idle time, and team size, the system predicts how productive an employee is likely to be.
+      </p>
+    </div>
+
+    <div class="col-md-6">
+      <h3 class="text-success">📈 Why It Matters</h3>
+      <p>
+        Measuring productivity isn't just about output — it’s about understanding patterns and making data-backed decisions. With this tool, organizations can optimize task allocation, reduce inefficiencies, and ultimately improve workforce morale and results.
+      </p>
+    </div>
+  </div>
+
+  <br/>
+
+  <div class="row text-left" style="color: #f1f1f1;">
+    <div class="col-md-4">
+      <h4 class="text-danger">🔍 Features</h4>
+      <ul>
+        <li>ML-powered prediction engine</li>
+        <li>Simple and clean UI</li>
+        <li>Instant analysis with clear outcomes</li>
+        <li>Responsive design for all devices</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4 class="text-primary">🏢 Use Cases</h4>
+      <ul>
+        <li>HR Performance Reviews</li>
+        <li>Departmental Efficiency Check</li>
+        <li>Team Restructuring Planning</li>
+        <li>Workforce Management</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4 class="text-warning">🛠️ Technologies Used</h4>
+      <ul>
+        <li>Python & Flask Framework</li>
+        <li>Machine Learning (Scikit-learn)</li>
+        <li>HTML, CSS, Bootstrap</li>
+        <li>Jinja2 Template Engine</li>
+      </ul>
+    </div>
+  </div>
+
+  <br/>
+
+  <div class="alert alert-info mt-4">
+    <strong>Want to see the system in action?</strong> Try predicting employee productivity now by going to the <a href="{{ url_for('predict_form') }}" class="btn btn-sm btn-primary">Prediction Page</a>!
+  </div>
+</div>
+
+  {% include 'footer.html' %}
+  
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
