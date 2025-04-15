@@ -85,4 +85,4 @@ Made  by **[Vinay Kumar](https://vinaygupta88.github.io/Myportfolio/)**
 
 ## 📜 License
 
-This project is licensed under the MIT License — feel free to use and modify!
+This project is open-source and free to use for learning, research, and personal projects. No formal license is attached—just give credit if you find it helpful!
